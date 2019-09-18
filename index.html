@@ -214,13 +214,9 @@
                 <div class="row">
                 <div class="col-lg-12">
                     <h2>ПОДБОР КУРСА ЗА ПЯТЬ МИНУТ</h2>
-                    <div class="program-selection">
-
-
-
+                    <div class="five-minute-course">
                         <ul class="nav nav-tabs">
-                            <li class="active"><a href="#five-minute-course-1" data-toggle="tab"><span>1</span></a>
-                            </li>
+                            <li><a href="#five-minute-course-1" data-toggle="tab" class="active"><span>1</span></a></li>
                             <li><a href="#five-minute-course-2" data-toggle="tab"><span class="step-passed">2</span></a></li>
                             <li><a href="#five-minute-course-3" data-toggle="tab"><span>3</span></a></li>
                             <li><a href="#five-minute-course-4" data-toggle="tab"><span>4</span></a></li>
@@ -232,131 +228,111 @@
                         <div class="tab-content">
                             <div class="tab-pane fade in active show" id="five-minute-course-1">
                                 <p>Какой язык вы хотите учить?</p>
-                                <div class="5-minute-buttons">
-                                    <button type="button" class="btn btn-primary" data-toggle="button"
-                                        aria-pressed="false" autocomplete="off">
-                                        Английский
-                                    </button>
-                                    <button type="button" class="btn btn-primary" data-toggle="button"
-                                        aria-pressed="false" autocomplete="off">
-                                        Испанский
-                                    </button>
-                                    <button type="button" class="btn btn-primary" data-toggle="button"
-                                        aria-pressed="false" autocomplete="off">
-                                        Французский
-                                    </button>
-                                    <button type="button" class="btn btn-primary" data-toggle="button"
-                                        aria-pressed="false" autocomplete="off">
-                                        Немецкий
-                                    </button>
-                                    <button type="button" class="btn btn-primary" data-toggle="button"
-                                        aria-pressed="false" autocomplete="off">
-                                        Русский
-                                    </button>
-                                    <button type="button" class="btn btn-primary" data-toggle="button"
-                                        aria-pressed="false" autocomplete="off">
-                                        Китайский
-                                    </button>
-                                    <button type="button" class="btn btn-primary" data-toggle="button"
-                                        aria-pressed="false" autocomplete="off">
-                                        Итальянский
-                                    </button>
+                                <div class="five-minute-buttons">
+                                        <input form="send_order" type="radio" id="radio1" name="question-1">
+                                        <label for="radio1">АНГЛИЙСКИЙ</label>
+                                        <input form="send_order" type="radio" id="radio2" name="question-1">
+                                        <label for="radio2">ИСПАНСКИЙ</label>
+                                        <input form="send_order" type="radio" id="radio3" name="question-1">
+                                        <label for="radio3">ФРАНЦУЗСКИЙ</label>
+                                        <input form="send_order" type="radio" id="radio4" name="question-1">
+                                        <label for="radio4">НЕМЕЦКИЙ</label>
+                                        <input form="send_order" type="radio" id="radio5" name="question-1">
+                                        <label for="radio5">РУССКИЙ</label>
+                                        <input form="send_order" type="radio" id="radio6" name="question-1">
+                                        <label for="radio6">КИТАЙСКИЙ</label>
+                                        <input form="send_order" type="radio" id="radio7" name="question-1">
+                                        <label for="radio7">ИТАЛЬЯНСКИЙ</label>
                                 </div>
 
-                                <input value="Далее" class="btn btn-default five-minute-course__button" type="button"
+                                <input value="СЛЕДУЮЩИЙ ВОПРОС" class="btn orange-button btn-primary five-minute-course__button" type="button"
                                     data-href="#five-minute-course-2">
                             </div><!-- tab-pane -->
                             <div class="tab-pane fade in " id="five-minute-course-2">
                                 <p>Какой язык вы хотите учить?</p>
-                                <div class="5-minute-buttons">
-                                    <button type="button" class="btn btn-primary" data-toggle="button"
-                                        aria-pressed="false" autocomplete="off">
-                                        Вариант 1
-                                    </button>
-                                    <button type="button" class="btn btn-primary" data-toggle="button"
-                                        aria-pressed="false" autocomplete="off">
-                                        Вариант 2
-                                    </button>
+                                <div class="five-minute-buttons">
+                                        <input form="send_order" type="radio" id="radio7" name="question-2">
+                                        <label for="radio7">КИТАЙСКИЙ</label>
+                                        <input form="send_order" type="radio" id="radio8" name="question-2">
+                                        <label for="radio8">ИТАЛЬЯНСКИЙ</label>
                                 </div>
 
-                                <input value="Далее" class="btn btn-default five-minute-course__button" type="button"
+                                <input value="СЛЕДУЮЩИЙ ВОПРОС" class="btn orange-button btn-primary five-minute-course__button" type="button"
                                     data-href="#five-minute-course-3">
                             </div><!-- tab-pane -->
                             <div class="tab-pane fade in " id="five-minute-course-3">
                                 <p>Какой язык вы хотите учить?</p>
-                                <div class="5-minute-buttons">
-                                    <button type="button" class="btn btn-primary" data-toggle="button"
-                                        aria-pressed="false" autocomplete="off">
-                                        Вариант 1
-                                    </button>
-                                    <button type="button" class="btn btn-primary" data-toggle="button"
-                                        aria-pressed="false" autocomplete="off">
-                                        Вариант 2
-                                    </button>
+                                <div class="five-minute-buttons">
+                                        <input form="send_order" type="radio" id="radio9" name="question-3">
+                                        <label for="radio9">КИТАЙСКИЙ</label>
+                                        <input form="send_order" type="radio" id="radio10" name="question-3">
+                                        <label for="radio10">ИТАЛЬЯНСКИЙ</label>
                                 </div>
 
-                                <input value="Далее" class="btn btn-default five-minute-course__button" type="button"
+                                <input value="СЛЕДУЮЩИЙ ВОПРОС" class="btn orange-button btn-primary five-minute-course__button" type="button"
                                     data-href="#five-minute-course-4">
                             </div><!-- tab-pane -->
                             <div class="tab-pane fade in " id="five-minute-course-4">
                                 <p>Какой язык вы хотите учить?</p>
-                                <div class="5-minute-buttons">
-                                    <button type="button" class="btn btn-primary" data-toggle="button"
-                                        aria-pressed="false" autocomplete="off">
-                                        Вариант 1
-                                    </button>
-                                    <button type="button" class="btn btn-primary" data-toggle="button"
-                                        aria-pressed="false" autocomplete="off">
-                                        Вариант 2
-                                    </button>
+                                <div class="five-minute-buttons">
+                                        <input form="send_order" type="radio" id="radio11" name="question-4">
+                                        <label for="radio11">КИТАЙСКИЙ</label>
+                                        <input form="send_order" type="radio" id="radio12" name="question-4">
+                                        <label for="radio12">ИТАЛЬЯНСКИЙ</label>
                                 </div>
 
-                                <input value="Далее" class="btn btn-default five-minute-course__button" type="button"
+                                <input value="СЛЕДУЮЩИЙ ВОПРОС" class="btn orange-button btn-primary five-minute-course__button" type="button"
                                     data-href="#five-minute-course-5">
                             </div><!-- tab-pane -->
                             <div class="tab-pane fade in " id="five-minute-course-5">
                                 <p>Какой язык вы хотите учить?</p>
-                                <div class="5-minute-buttons">
-                                    <button type="button" class="btn btn-primary" data-toggle="button"
-                                        aria-pressed="false" autocomplete="off">
-                                        Вариант 1
-                                    </button>
-                                    <button type="button" class="btn btn-primary" data-toggle="button"
-                                        aria-pressed="false" autocomplete="off">
-                                        Вариант 2
-                                    </button>
+                                <div class="five-minute-buttons">
+                                        <input form="send_order" type="radio" id="radio13" name="question-5">
+                                        <label for="radio13">КИТАЙСКИЙ</label>
+                                        <input form="send_order" type="radio" id="radio14" name="question-5">
+                                        <label for="radio14">ИТАЛЬЯНСКИЙ</label>
                                 </div>
 
-                                <input value="Далее" class="btn btn-default five-minute-course__button" type="button"
+                                <input value="СЛЕДУЮЩИЙ ВОПРОС" class="btn orange-button btn-primary five-minute-course__button" type="button"
                                     data-href="#five-minute-course-6">
                             </div><!-- tab-pane -->
                             <div class="tab-pane fade in " id="five-minute-course-6">
                                 <p>Какой язык вы хотите учить?</p>
-                                <div class="5-minute-buttons">
-                                    <button type="button" class="btn btn-primary" data-toggle="button"
-                                        aria-pressed="false" autocomplete="off">
-                                        Вариант 1
-                                    </button>
-                                    <button type="button" class="btn btn-primary" data-toggle="button"
-                                        aria-pressed="false" autocomplete="off">
-                                        Вариант 2
-                                    </button>
+                                <div class="five-minute-buttons">
+                                        <input form="send_order" type="radio" id="radio15" name="question-6">
+                                        <label for="radio15">КИТАЙСКИЙ</label>
+                                        <input form="send_order" type="radio" id="radio16" name="question-6">
+                                        <label for="radio16">ИТАЛЬЯНСКИЙ</label>
                                 </div>
 
-                                <input value="Далее" class="btn btn-default five-minute-course__button" type="button"
+                                <input value="ПОДОБРАТЬ" class="btn orange-button btn-primary five-minute-course__button" type="button"
                                     data-href="#five-minute-course-7">
                             </div><!-- tab-pane -->
                             <div class="tab-pane fade in " id="five-minute-course-7">
-                                <p>форма</p>
-                                <div class="5-minute-buttons">
-
-                                </div>
+                                <p>Вам подходит:</p>
+                                <ul class="five-minute-result__ul">
+                                    <li><a href="#">Общий разговорный курс</a></li>
+                                    <li><a href="#">Немецкий язык</a></li>
+                                    <li><a href="#">Экспресс-курс</a></li>
+                                </ul>
+                                <p>Заполните форму и закажите прямо сейчас!</p>
+                                <form name="send_order" action="#">
+                                    <input type="text" class="send_order__input" placeholder="Имя">
+                                    <input type="text" class="send_order__input" placeholder="Телефон">
+                                    <input value="ЗАКАЗАТЬ" class="btn orange-button btn-primary five-minute-course__button" type="submit"
+                                    data-href="#five-minute-course-7">
+                                </form>
                             </div><!-- tab-pane -->
                         </div><!-- tab-content -->
 
                     </div><!-- program-selection -->
                 </div>
                 </div>
+            </div>
+        </section>
+        <section class="courses">
+            <div class="row">
+                
             </div>
         </section>
     </main>
