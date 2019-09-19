@@ -700,7 +700,7 @@ input[type=radio]+label {
     background-image: initial;
 }
 .nav-v-pills-courses-container {
-overflow: auto;
+overflow: hidden;
     white-space: nowrap;
 
 }
