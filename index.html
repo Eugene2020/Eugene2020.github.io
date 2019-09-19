@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Hello, world!</title>
+    <title>Лингвистический клуб иностранных языков</title>
 
 </head>
 
@@ -23,12 +23,15 @@
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse" id="navbarCollapse">
+                                <a class="navbar-brand" href="#">Личный кабинет</a>
+                                <a class="navbar-brand d-inline d-sm-inline d-md-inline d-lg-none d-xl-none" href="#">8 (246) 222-22-22</a>
+                <div class="navbar-collapse collapse" id="navbarCollapse" style="">
+                    <a class="close-top-menu d-block d-sm-block d-md-block d-lg-none d-xl-none" href="javascript:void(0);" data-toggle="collapse" data-target="#navbarCollapse"><img src="img/close.svg"></a>
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
                                 aria-haspopup="true" aria-expanded="false">О нас</a>
-                            <div class="dropdown-menu">
+                            <div class="mobile-sub-menu dropdown-menu">
                                 <a class="dropdown-item" href="#">Фото клуба</a>
                                 <a class="dropdown-item" href="#">Лицензии и сертификаты</a>
                                 <a class="dropdown-item" href="#">Преподователи</a>
@@ -50,9 +53,46 @@
                             <a class="nav-link" href="#">Контакты</a>
                         </li>
                     </ul>
+                    <nav class="navbar-expand p-0 categories-menu d-block d-sm-block d-md-block d-lg-none d-xl-none ">
+                        <div class="navbar p-0">
+                            <ul class="navbar-nav mobile-second-menu">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                                        aria-expanded="false">Взрослым</a>
+                                    <div class="mobile-sub-menu dropdown-menu">
+                                        <a class="dropdown-item" href="#">Английский</a>
+                                        <a class="dropdown-item" href="#">Немецкий</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                                        aria-expanded="false">Детям</a>
+                                    <div class="mobile-sub-menu dropdown-menu">
+                                        <a class="dropdown-item" href="#">Английский</a>
+                                        <a class="dropdown-item" href="#">Немецкий</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Учителям</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Корпоративное обучение</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                                        aria-expanded="false">Переводы</a>
+                                    <div class="mobile-sub-menu dropdown-menu">
+                                        <a class="dropdown-item" href="#">Ссылка 1</a>
+                                        <a class="dropdown-item" href="#">Вторая ссылка</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
-                <a class="navbar-brand" href="#">Личный кабинет</a>
-                <form class="form-inline mt-2 mt-md-0">
+
+
+                <form class="form-inline mt-2 mt-md-0 d-none d-sm-none d-md-none d-lg-flex d-xl-flex">
                     <input class="form-control search-form" type="text" placeholder="Поиск по сайту"
                         aria-label="Search">
                 </form>
@@ -60,7 +100,7 @@
         </nav>
 
         <div class="container container-on-top-fixed p-0">
-            <div class="row align-items-center top-contacts">
+            <div class="row align-items-center top-contacts d-none d-sm-none d-md-none d-lg-flex d-xl-flex">
                 <div class="col-lg-3"></div>
                 <div class="col-lg-3 p-0">
                     <a href="#" class="orange-top-link">Пробное занятие</a>
@@ -86,9 +126,9 @@
         </div>
         <div class="container container-on-top-fixed p-0 menu-nav">
             <div class="row align-items-center">
-                <div class="col-lg-3"><span class="company-title">ЛИНГВИСТИЧЕСКИЙ КЛУБ</span></div>
+                <div class="d-none d-sm-none d-md-none d-lg-block d-xl-block col-lg-3"><span class="company-title">ЛИНГВИСТИЧЕСКИЙ КЛУБ</span></div>
                 <div class="col-lg-9 p-0">
-                    <nav class="navbar-expand p-0 categories-menu">
+                    <nav class="navbar-expand p-0 categories-menu d-none d-sm-none d-md-none d-lg-inline-block d-xl-inline-block ">
                         <div class="navbar p-0">
                             <ul class="navbar-nav">
                                 <li class="nav-item dropdown">
@@ -140,7 +180,7 @@
                 <div class="carousel-inner">
                     <div class="carousel-item main-slide active">
                         <img src="img/slide.png" class="d-block w-100" alt="Первый слайд">
-                        <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-caption d-md-block">
                             <h5>ОПЛАТИ ДО 1 АВГУСТА</h5>
                             <p>ПОЛУЧИ СКИДКУ 10%</p>
                             <a href="#" class="slider-link">ЗАПИСАТЬСЯ</a>
@@ -148,7 +188,7 @@
                     </div>
                     <div class="carousel-item main-slide">
                         <img src="img/slide.png" class="d-block w-100" alt="Второй слайд">
-                        <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-caption d-md-block">
                             <h5>ОПЛАТИ ДО 1 АВГУСТА</h5>
                             <p>ПОЛУЧИ СКИДКУ 10%</p>
                             <a href="#" class="slider-link">ЗАПИСАТЬСЯ</a>
@@ -156,7 +196,7 @@
                     </div>
                     <div class="carousel-item main-slide">
                         <img src="img/slide.png" class="d-block w-100" alt="Третий слайд">
-                        <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-caption d-md-block">
                             <h5>ОПЛАТИ ДО 1 АВГУСТА</h5>
                             <p>ПОЛУЧИ СКИДКУ 10%</p>
                             <a href="#" class="slider-link">ЗАПИСАТЬСЯ</a>
@@ -376,34 +416,40 @@
                     <div class="tab-content col-lg-12" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="adult" role="tabpanel" aria-labelledby="adult-tab">
                             <div class="row">
-                                <div class="col-3">
-                                    <div class="nav flex-column nav-pills nav-v-pills-courses" id="v-pills-adult-tab" role="tablist"
+                                <div class="lefty d-block d-sm-block d-md-block d-lg-none d-xl-none"><img src="img/arrLeft.svg"></div>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 nav-v-pills-courses-container">     
+                                    
+                                    <div class="nav nav-pills nav-v-pills-courses" id="v-pills-adult-tab" role="tablist"
                                         aria-orientation="vertical">
-                                        <a class="nav-link active" id="v-pills-adult-english-tab" data-toggle="pill"
+
+                                        <a class="nav-link nav-link-course-lang active" id="v-pills-adult-english-tab" data-toggle="pill"
                                             href="#v-pills-adult-english" role="tab"
-                                            aria-controls="v-pills-adult-english" aria-selected="true">Английский</a>
-                                        <a class="nav-link" id="v-pills-adult-spanish-tab" data-toggle="pill"
+                                            aria-controls="v-pills-adult-english" aria-selected="true">Английский</a></a>
+                                        <a class="nav-link nav-link-course-lang" id="v-pills-adult-spanish-tab" data-toggle="pill"
                                             href="#v-pills-adult-spanish" role="tab"
-                                            aria-controls="v-pills-adult-spanish" aria-selected="false">Испанский</a>
-                                        <a class="nav-link" id="v-pills-adult-italian-tab" data-toggle="pill"
+                                            aria-controls="v-pills-adult-spanish" aria-selected="false">Испанский</a></a>
+                                        <a class="nav-link nav-link-course-lang" id="v-pills-adult-italian-tab" data-toggle="pill"
                                             href="#v-pills-adult-italian" role="tab"
-                                            aria-controls="v-pills-adult-italian" aria-selected="false">Итальянский</a>
-                                        <a class="nav-link" id="v-pills-adult-chinese-tab" data-toggle="pill"
+                                            aria-controls="v-pills-adult-italian" aria-selected="false">Итальянский</a></a>
+                                        <a class="nav-link nav-link-course-lang" id="v-pills-adult-chinese-tab" data-toggle="pill"
                                             href="#v-pills-adult-chinese" role="tab"
-                                            aria-controls="v-pills-adult-chinese" aria-selected="false">Китайский</a>
-                                        <a class="nav-link" id="v-pills-adult-french-tab" data-toggle="pill"
+                                            aria-controls="v-pills-adult-chinese" aria-selected="false">Китайский</a></a>
+                                        <a class="nav-link nav-link-course-lang" id="v-pills-adult-french-tab" data-toggle="pill"
                                             href="#v-pills-adult-french" role="tab" aria-controls="v-pills-adult-french"
-                                            aria-selected="false">Французский</a>
-                                        <a class="nav-link" id="v-pills-adult-russian-tab" data-toggle="pill"
+                                            aria-selected="false">Французский</a></a>
+                                        <a class="nav-link nav-link-course-lang" id="v-pills-adult-russian-tab" data-toggle="pill"
                                             href="#v-pills-adult-russian" role="tab"
                                             aria-controls="v-pills-adult-russian" aria-selected="false">Русский для
-                                            иностранцев</a>
-                                        <a class="nav-link" id="v-pills-adult-deutch-tab" data-toggle="pill"
+                                            иностранцев</a></a>
+                                        <a class="nav-link nav-link-course-lang" id="v-pills-adult-deutch-tab" data-toggle="pill"
                                             href="#v-pills-adult-deutch" role="tab" aria-controls="v-pills-adult-deutch"
-                                            aria-selected="false">Немецкий</a>
+                                            aria-selected="false">Немецкий</a></a>
                                     </div>
+                                    
                                 </div>
-                                <div class="col-9">
+                                <div class="righty d-block d-sm-block d-md-block d-lg-none d-xl-none"><img src="img/arrRight.svg"></div>
+                                
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
                                     <div class="tab-content tab-with-course" id="v-pills-adult-tabContent">
                                         <div class="tab-pane fade show active" id="v-pills-adult-english"
                                             role="tabpanel" aria-labelledby="v-pills-adult-english-tab">
@@ -577,27 +623,29 @@
                         </div>
                         <div class="tab-pane fade" id="kids" role="tabpanel" aria-labelledby="kids-tab">
                             <div class="row">
-                                <div class="col-3">
-                                    <div class="nav flex-column nav-pills nav-v-pills-courses" id="v-pills-kids-tab" role="tablist" aria-orientation="vertical">
-                                        <a class="nav-link active" id="v-pills-kids-english-tab" data-toggle="pill"
+                                <div class="lefty d-block d-sm-block d-md-block d-lg-none d-xl-none"><img src="img/arrLeft.svg"></div>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 nav-v-pills-courses-container">
+                                    <div class="nav  nav-pills nav-v-pills-courses" id="v-pills-kids-tab" role="tablist" aria-orientation="vertical">
+                                        <a class="nav-link nav-link-course-lang active" id="v-pills-kids-english-tab" data-toggle="pill"
                                             href="#v-pills-kids-english" role="tab" aria-controls="v-pills-kids-english"
                                             aria-selected="true">Английский</a>
-                                        <a class="nav-link" id="v-pills-kids-spanish-tab" data-toggle="pill" href="#v-pills-kids-spanish"
+                                        <a class="nav-link nav-link-course-lang" id="v-pills-kids-spanish-tab" data-toggle="pill" href="#v-pills-kids-spanish"
                                             role="tab" aria-controls="v-pills-kids-spanish" aria-selected="false">Испанский</a>
-                                        <a class="nav-link" id="v-pills-kids-italian-tab" data-toggle="pill" href="#v-pills-kids-italian"
+                                        <a class="nav-link nav-link-course-lang" id="v-pills-kids-italian-tab" data-toggle="pill" href="#v-pills-kids-italian"
                                             role="tab" aria-controls="v-pills-kids-italian" aria-selected="false">Итальянский</a>
-                                        <a class="nav-link" id="v-pills-kids-chinese-tab" data-toggle="pill" href="#v-pills-kids-chinese"
+                                        <a class="nav-link nav-link-course-lang" id="v-pills-kids-chinese-tab" data-toggle="pill" href="#v-pills-kids-chinese"
                                             role="tab" aria-controls="v-pills-kids-chinese" aria-selected="false">Китайский</a>
-                                        <a class="nav-link" id="v-pills-kids-french-tab" data-toggle="pill" href="#v-pills-kids-french"
+                                        <a class="nav-link nav-link-course-lang" id="v-pills-kids-french-tab" data-toggle="pill" href="#v-pills-kids-french"
                                             role="tab" aria-controls="v-pills-kids-french" aria-selected="false">Французский</a>
-                                        <a class="nav-link" id="v-pills-kids-russian-tab" data-toggle="pill" href="#v-pills-kids-russian"
+                                        <a class="nav-link nav-link-course-lang" id="v-pills-kids-russian-tab" data-toggle="pill" href="#v-pills-kids-russian"
                                             role="tab" aria-controls="v-pills-kids-russian" aria-selected="false">Русский для
                                             иностранцев</a>
-                                        <a class="nav-link" id="v-pills-kids-deutch-tab" data-toggle="pill" href="#v-pills-kids-deutch"
+                                        <a class="nav-link nav-link-course-lang" id="v-pills-kids-deutch-tab" data-toggle="pill" href="#v-pills-kids-deutch"
                                             role="tab" aria-controls="v-pills-kids-deutch" aria-selected="false">Немецкий</a>
                                     </div>
                                 </div>
-                                <div class="col-9">
+                                <div class="righty d-block d-sm-block d-md-block d-lg-none d-xl-none"><img src="img/arrRight.svg"></div>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
                                     <div class="tab-content tab-with-course" id="v-pills-kids-tabContent">
                                         <div class="tab-pane fade show active" id="v-pills-kids-english" role="tabpanel"
                                             aria-labelledby="v-pills-kids-english-tab">
@@ -617,8 +665,10 @@
                                                 <li><img src="img/user-graduate.svg"><a href="#">Международные
                                                         экзамены</a></li>
                                             </ul>
+                                            
                                             <input value="ПОДОБРАТЬ КУРС" class="btn orange-button btn-primary five-minute-course__button"
                                                 type="button">
+                                            
                                         </div>
                                         <div class="tab-pane fade" id="v-pills-kids-spanish" role="tabpanel"
                                             aria-labelledby="v-pills-kids-spanish-tab">
@@ -640,8 +690,10 @@
                                                 <li><img src="img/user-graduate.svg"><a href="#">Международные
                                                         экзамены</a></li>
                                             </ul>
+                                            
                                             <input value="ПОДОБРАТЬ КУРС" class="btn orange-button btn-primary five-minute-course__button"
                                                 type="button">
+                                            
                                         </div>
                                         <div class="tab-pane fade" id="v-pills-kids-italian" role="tabpanel"
                                             aria-labelledby="v-pills-kids-italian-tab">
@@ -663,8 +715,10 @@
                                                 <li><img src="img/user-graduate.svg"><a href="#">Международные
                                                         экзамены</a></li>
                                             </ul>
+                                            
                                             <input value="ПОДОБРАТЬ КУРС" class="btn orange-button btn-primary five-minute-course__button"
                                                 type="button">
+                                            
                                         </div>
                                         <div class="tab-pane fade" id="v-pills-kids-chinese" role="tabpanel"
                                             aria-labelledby="v-pills-kids-chinese-tab">
@@ -686,8 +740,10 @@
                                                 <li><img src="img/user-graduate.svg"><a href="#">Международные
                                                         экзамены</a></li>
                                             </ul>
+                                            
                                             <input value="ПОДОБРАТЬ КУРС" class="btn orange-button btn-primary five-minute-course__button"
                                                 type="button">
+                                            
                                         </div>
                                         <div class="tab-pane fade" id="v-pills-kids-french" role="tabpanel"
                                             aria-labelledby="v-pills-kids-french-tab">
@@ -709,8 +765,10 @@
                                                 <li><img src="img/user-graduate.svg"><a href="#">Международные
                                                         экзамены</a></li>
                                             </ul>
+                                            
                                             <input value="ПОДОБРАТЬ КУРС" class="btn orange-button btn-primary five-minute-course__button"
                                                 type="button">
+                                            
                                         </div>
                                         <div class="tab-pane fade" id="v-pills-kids-russian" role="tabpanel"
                                             aria-labelledby="v-pills-kids-russian-tab">
@@ -732,8 +790,10 @@
                                                 <li><img src="img/user-graduate.svg"><a href="#">Международные
                                                         экзамены</a></li>
                                             </ul>
+                                            
                                             <input value="ПОДОБРАТЬ КУРС" class="btn orange-button btn-primary five-minute-course__button"
                                                 type="button">
+                                            
                                         </div>
                                         <div class="tab-pane fade" id="v-pills-kids-deutch" role="tabpanel"
                                             aria-labelledby="v-pills-kids-deutch-tab">
@@ -755,35 +815,42 @@
                                                 <li><img src="img/user-graduate.svg"><a href="#">Международные
                                                         экзамены</a></li>
                                             </ul>
+                                            
                                             <input value="ПОДОБРАТЬ КУРС" class="btn orange-button btn-primary five-minute-course__button"
                                                 type="button">
+                                            
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="teachers" role="tabpanel" aria-labelledby="teachers-tab">
+                            
                             <div class="row">
-                                <div class="col-3">
-                                    <div class="nav flex-column nav-pills nav-v-pills-courses" id="v-pills-teachers-tab" role="tablist" aria-orientation="vertical">
-                                        <a class="nav-link active" id="v-pills-teachers-english-tab" data-toggle="pill" href="#v-pills-teachers-english"
+                                <div class="lefty d-block d-sm-block d-md-block d-lg-none d-xl-none"><img src="img/arrLeft.svg"></div>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 nav-v-pills-courses-container">
+                                    <div class="nav  nav-pills nav-v-pills-courses" id="v-pills-teachers-tab" role="tablist" aria-orientation="vertical">
+                                        <a class="nav-link nav-link-course-lang active" id="v-pills-teachers-english-tab" data-toggle="pill" href="#v-pills-teachers-english"
                                             role="tab" aria-controls="v-pills-teachers-english" aria-selected="true">Английский</a>
-                                        <a class="nav-link" id="v-pills-teachers-spanish-tab" data-toggle="pill" href="#v-pills-teachers-spanish"
+                                        <a class="nav-link nav-link-course-lang" id="v-pills-teachers-spanish-tab" data-toggle="pill" href="#v-pills-teachers-spanish"
                                             role="tab" aria-controls="v-pills-teachers-spanish" aria-selected="false">Испанский</a>
-                                        <a class="nav-link" id="v-pills-teachers-italian-tab" data-toggle="pill" href="#v-pills-teachers-italian"
+                                        <a class="nav-link nav-link-course-lang" id="v-pills-teachers-italian-tab" data-toggle="pill" href="#v-pills-teachers-italian"
                                             role="tab" aria-controls="v-pills-teachers-italian" aria-selected="false">Итальянский</a>
-                                        <a class="nav-link" id="v-pills-teachers-chinese-tab" data-toggle="pill" href="#v-pills-teachers-chinese"
+                                        <a class="nav-link nav-link-course-lang" id="v-pills-teachers-chinese-tab" data-toggle="pill" href="#v-pills-teachers-chinese"
                                             role="tab" aria-controls="v-pills-teachers-chinese" aria-selected="false">Китайский</a>
-                                        <a class="nav-link" id="v-pills-teachers-french-tab" data-toggle="pill" href="#v-pills-teachers-french"
+                                        <a class="nav-link nav-link-course-lang" id="v-pills-teachers-french-tab" data-toggle="pill" href="#v-pills-teachers-french"
                                             role="tab" aria-controls="v-pills-teachers-french" aria-selected="false">Французский</a>
-                                        <a class="nav-link" id="v-pills-teachers-russian-tab" data-toggle="pill" href="#v-pills-teachers-russian"
+                                        <a class="nav-link nav-link-course-lang" id="v-pills-teachers-russian-tab" data-toggle="pill" href="#v-pills-teachers-russian"
                                             role="tab" aria-controls="v-pills-teachers-russian" aria-selected="false">Русский для
                                             иностранцев</a>
-                                        <a class="nav-link" id="v-pills-teachers-deutch-tab" data-toggle="pill" href="#v-pills-teachers-deutch"
+                                        <a class="nav-link nav-link-course-lang" id="v-pills-teachers-deutch-tab" data-toggle="pill" href="#v-pills-teachers-deutch"
                                             role="tab" aria-controls="v-pills-teachers-deutch" aria-selected="false">Немецкий</a>
                                     </div>
+                                    
                                 </div>
-                                <div class="col-9">
+                                <div class="righty d-block d-sm-block d-md-block d-lg-none d-xl-none"><img src="img/arrRight.svg"></div>
+                                
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
                                     <div class="tab-content tab-with-course" id="v-pills-teachers-tabContent">
                                         <div class="tab-pane fade show active" id="v-pills-teachers-english" role="tabpanel"
                                             aria-labelledby="v-pills-teachers-english-tab">
@@ -803,8 +870,10 @@
                                                 <li><img src="img/user-graduate.svg"><a href="#">Международные
                                                         экзамены</a></li>
                                             </ul>
+                                            
                                             <input value="ПОДОБРАТЬ КУРС" class="btn orange-button btn-primary five-minute-course__button"
                                                 type="button">
+                                            
                                         </div>
                                         <div class="tab-pane fade" id="v-pills-teachers-spanish" role="tabpanel"
                                             aria-labelledby="v-pills-teachers-spanish-tab">
@@ -826,8 +895,10 @@
                                                 <li><img src="img/user-graduate.svg"><a href="#">Международные
                                                         экзамены</a></li>
                                             </ul>
+                                            
                                             <input value="ПОДОБРАТЬ КУРС" class="btn orange-button btn-primary five-minute-course__button"
                                                 type="button">
+                                            
                                         </div>
                                         <div class="tab-pane fade" id="v-pills-teachers-italian" role="tabpanel"
                                             aria-labelledby="v-pills-teachers-italian-tab">
@@ -849,8 +920,10 @@
                                                 <li><img src="img/user-graduate.svg"><a href="#">Международные
                                                         экзамены</a></li>
                                             </ul>
+                                            
                                             <input value="ПОДОБРАТЬ КУРС" class="btn orange-button btn-primary five-minute-course__button"
                                                 type="button">
+                                            
                                         </div>
                                         <div class="tab-pane fade" id="v-pills-teachers-chinese" role="tabpanel"
                                             aria-labelledby="v-pills-teachers-chinese-tab">
@@ -872,8 +945,10 @@
                                                 <li><img src="img/user-graduate.svg"><a href="#">Международные
                                                         экзамены</a></li>
                                             </ul>
+                                            
                                             <input value="ПОДОБРАТЬ КУРС" class="btn orange-button btn-primary five-minute-course__button"
                                                 type="button">
+                                            
                                         </div>
                                         <div class="tab-pane fade" id="v-pills-teachers-french" role="tabpanel"
                                             aria-labelledby="v-pills-teachers-french-tab">
@@ -895,8 +970,10 @@
                                                 <li><img src="img/user-graduate.svg"><a href="#">Международные
                                                         экзамены</a></li>
                                             </ul>
+                                            
                                             <input value="ПОДОБРАТЬ КУРС" class="btn orange-button btn-primary five-minute-course__button"
                                                 type="button">
+                                            
                                         </div>
                                         <div class="tab-pane fade" id="v-pills-teachers-russian" role="tabpanel"
                                             aria-labelledby="v-pills-teachers-russian-tab">
@@ -918,8 +995,10 @@
                                                 <li><img src="img/user-graduate.svg"><a href="#">Международные
                                                         экзамены</a></li>
                                             </ul>
+                                            
                                             <input value="ПОДОБРАТЬ КУРС" class="btn orange-button btn-primary five-minute-course__button"
                                                 type="button">
+                                            
                                         </div>
                                         <div class="tab-pane fade" id="v-pills-teachers-deutch" role="tabpanel"
                                             aria-labelledby="v-pills-teachers-deutch-tab">
@@ -941,8 +1020,10 @@
                                                 <li><img src="img/user-graduate.svg"><a href="#">Международные
                                                         экзамены</a></li>
                                             </ul>
+                                            
                                             <input value="ПОДОБРАТЬ КУРС" class="btn orange-button btn-primary five-minute-course__button"
                                                 type="button">
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -950,31 +1031,34 @@
                         </div>
                         <div class="tab-pane fade" id="business" role="tabpanel" aria-labelledby="business-tab">
                             <div class="row">
-                                <div class="col-3">
-                                    <div class="nav flex-column nav-pills nav-v-pills-courses" id="v-pills-business-tab" role="tablist" aria-orientation="vertical">
-                                        <a class="nav-link active" id="v-pills-business-english-tab" data-toggle="pill"
+                                <div class="lefty d-block d-sm-block d-md-block d-lg-none d-xl-none"><img src="img/arrLeft.svg"></div>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 nav-v-pills-courses-container">
+                                    <div class="nav  nav-pills nav-v-pills-courses" id="v-pills-business-tab" role="tablist" aria-orientation="vertical">
+                                        <a class="nav-link nav-link-course-lang active" id="v-pills-business-english-tab" data-toggle="pill"
                                             href="#v-pills-business-english" role="tab" aria-controls="v-pills-business-english"
                                             aria-selected="true">Английский</a>
-                                        <a class="nav-link" id="v-pills-business-spanish-tab" data-toggle="pill"
+                                        <a class="nav-link nav-link-course-lang" id="v-pills-business-spanish-tab" data-toggle="pill"
                                             href="#v-pills-business-spanish" role="tab" aria-controls="v-pills-business-spanish"
                                             aria-selected="false">Испанский</a>
-                                        <a class="nav-link" id="v-pills-business-italian-tab" data-toggle="pill"
+                                        <a class="nav-link nav-link-course-lang" id="v-pills-business-italian-tab" data-toggle="pill"
                                             href="#v-pills-business-italian" role="tab" aria-controls="v-pills-business-italian"
                                             aria-selected="false">Итальянский</a>
-                                        <a class="nav-link" id="v-pills-business-chinese-tab" data-toggle="pill"
+                                        <a class="nav-link nav-link-course-lang" id="v-pills-business-chinese-tab" data-toggle="pill"
                                             href="#v-pills-business-chinese" role="tab" aria-controls="v-pills-business-chinese"
                                             aria-selected="false">Китайский</a>
-                                        <a class="nav-link" id="v-pills-business-french-tab" data-toggle="pill" href="#v-pills-business-french"
+                                        <a class="nav-link nav-link-course-lang" id="v-pills-business-french-tab" data-toggle="pill" href="#v-pills-business-french"
                                             role="tab" aria-controls="v-pills-business-french" aria-selected="false">Французский</a>
-                                        <a class="nav-link" id="v-pills-business-russian-tab" data-toggle="pill"
+                                        <a class="nav-link nav-link-course-lang" id="v-pills-business-russian-tab" data-toggle="pill"
                                             href="#v-pills-business-russian" role="tab" aria-controls="v-pills-business-russian"
                                             aria-selected="false">Русский для
                                             иностранцев</a>
-                                        <a class="nav-link" id="v-pills-business-deutch-tab" data-toggle="pill" href="#v-pills-business-deutch"
+                                        <a class="nav-link nav-link-course-lang" id="v-pills-business-deutch-tab" data-toggle="pill" href="#v-pills-business-deutch"
                                             role="tab" aria-controls="v-pills-business-deutch" aria-selected="false">Немецкий</a>
                                     </div>
+                                    
                                 </div>
-                                <div class="col-9">
+                                <div class="righty d-block d-sm-block d-md-block d-lg-none d-xl-none"><img src="img/arrRight.svg"></div>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
                                     <div class="tab-content tab-with-course" id="v-pills-business-tabContent">
                                         <div class="tab-pane fade show active" id="v-pills-business-english" role="tabpanel"
                                             aria-labelledby="v-pills-business-english-tab">
@@ -994,8 +1078,10 @@
                                                 <li><img src="img/user-graduate.svg"><a href="#">Международные
                                                         экзамены</a></li>
                                             </ul>
+                                            
                                             <input value="ПОДОБРАТЬ КУРС" class="btn orange-button btn-primary five-minute-course__button"
                                                 type="button">
+                                            
                                         </div>
                                         <div class="tab-pane fade" id="v-pills-business-spanish" role="tabpanel"
                                             aria-labelledby="v-pills-business-spanish-tab">
@@ -1017,8 +1103,10 @@
                                                 <li><img src="img/user-graduate.svg"><a href="#">Международные
                                                         экзамены</a></li>
                                             </ul>
+                                            
                                             <input value="ПОДОБРАТЬ КУРС" class="btn orange-button btn-primary five-minute-course__button"
                                                 type="button">
+                                            
                                         </div>
                                         <div class="tab-pane fade" id="v-pills-business-italian" role="tabpanel"
                                             aria-labelledby="v-pills-business-italian-tab">
@@ -1040,8 +1128,10 @@
                                                 <li><img src="img/user-graduate.svg"><a href="#">Международные
                                                         экзамены</a></li>
                                             </ul>
+                                            
                                             <input value="ПОДОБРАТЬ КУРС" class="btn orange-button btn-primary five-minute-course__button"
                                                 type="button">
+                                            
                                         </div>
                                         <div class="tab-pane fade" id="v-pills-business-chinese" role="tabpanel"
                                             aria-labelledby="v-pills-business-chinese-tab">
@@ -1063,8 +1153,10 @@
                                                 <li><img src="img/user-graduate.svg"><a href="#">Международные
                                                         экзамены</a></li>
                                             </ul>
+                                            
                                             <input value="ПОДОБРАТЬ КУРС" class="btn orange-button btn-primary five-minute-course__button"
                                                 type="button">
+                                            
                                         </div>
                                         <div class="tab-pane fade" id="v-pills-business-french" role="tabpanel"
                                             aria-labelledby="v-pills-business-french-tab">
@@ -1086,8 +1178,10 @@
                                                 <li><img src="img/user-graduate.svg"><a href="#">Международные
                                                         экзамены</a></li>
                                             </ul>
+                                            
                                             <input value="ПОДОБРАТЬ КУРС" class="btn orange-button btn-primary five-minute-course__button"
                                                 type="button">
+                                            
                                         </div>
                                         <div class="tab-pane fade" id="v-pills-business-russian" role="tabpanel"
                                             aria-labelledby="v-pills-business-russian-tab">
@@ -1109,8 +1203,10 @@
                                                 <li><img src="img/user-graduate.svg"><a href="#">Международные
                                                         экзамены</a></li>
                                             </ul>
+                                            
                                             <input value="ПОДОБРАТЬ КУРС" class="btn orange-button btn-primary five-minute-course__button"
                                                 type="button">
+                                            
                                         </div>
                                         <div class="tab-pane fade" id="v-pills-business-deutch" role="tabpanel"
                                             aria-labelledby="v-pills-business-deutch-tab">
@@ -1132,8 +1228,10 @@
                                                 <li><img src="img/user-graduate.svg"><a href="#">Международные
                                                         экзамены</a></li>
                                             </ul>
+                                            
                                             <input value="ПОДОБРАТЬ КУРС" class="btn orange-button btn-primary five-minute-course__button"
                                                 type="button">
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -1141,31 +1239,34 @@
                         </div>
                         <div class="tab-pane fade" id="translate" role="tabpanel" aria-labelledby="translate-tab">
                             <div class="row">
-                                <div class="col-3">
-                                    <div class="nav flex-column nav-pills nav-v-pills-courses" id="v-pills-translate-tab" role="tablist" aria-orientation="vertical">
-                                        <a class="nav-link active" id="v-pills-translate-english-tab" data-toggle="pill"
+                                <div class="lefty d-block d-sm-block d-md-block d-lg-none d-xl-none"><img src="img/arrLeft.svg"></div>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 nav-v-pills-courses-container">
+                                    <div class="nav  nav-pills nav-v-pills-courses" id="v-pills-translate-tab" role="tablist" aria-orientation="vertical">
+                                        <a class="nav-link nav-link-course-lang active" id="v-pills-translate-english-tab" data-toggle="pill"
                                             href="#v-pills-translate-english" role="tab" aria-controls="v-pills-translate-english"
                                             aria-selected="true">Английский</a>
-                                        <a class="nav-link" id="v-pills-translate-spanish-tab" data-toggle="pill"
+                                        <a class="nav-link nav-link-course-lang" id="v-pills-translate-spanish-tab" data-toggle="pill"
                                             href="#v-pills-translate-spanish" role="tab" aria-controls="v-pills-translate-spanish"
                                             aria-selected="false">Испанский</a>
-                                        <a class="nav-link" id="v-pills-translate-italian-tab" data-toggle="pill"
+                                        <a class="nav-link nav-link-course-lang" id="v-pills-translate-italian-tab" data-toggle="pill"
                                             href="#v-pills-translate-italian" role="tab" aria-controls="v-pills-translate-italian"
                                             aria-selected="false">Итальянский</a>
-                                        <a class="nav-link" id="v-pills-translate-chinese-tab" data-toggle="pill"
+                                        <a class="nav-link nav-link-course-lang" id="v-pills-translate-chinese-tab" data-toggle="pill"
                                             href="#v-pills-translate-chinese" role="tab" aria-controls="v-pills-translate-chinese"
                                             aria-selected="false">Китайский</a>
-                                        <a class="nav-link" id="v-pills-translate-french-tab" data-toggle="pill" href="#v-pills-translate-french"
+                                        <a class="nav-link nav-link-course-lang" id="v-pills-translate-french-tab" data-toggle="pill" href="#v-pills-translate-french"
                                             role="tab" aria-controls="v-pills-translate-french" aria-selected="false">Французский</a>
-                                        <a class="nav-link" id="v-pills-translate-russian-tab" data-toggle="pill"
+                                        <a class="nav-link nav-link-course-lang" id="v-pills-translate-russian-tab" data-toggle="pill"
                                             href="#v-pills-translate-russian" role="tab" aria-controls="v-pills-translate-russian"
                                             aria-selected="false">Русский для
                                             иностранцев</a>
-                                        <a class="nav-link" id="v-pills-translate-deutch-tab" data-toggle="pill" href="#v-pills-translate-deutch"
+                                        <a class="nav-link nav-link-course-lang" id="v-pills-translate-deutch-tab" data-toggle="pill" href="#v-pills-translate-deutch"
                                             role="tab" aria-controls="v-pills-translate-deutch" aria-selected="false">Немецкий</a>
                                     </div>
+                                    
                                 </div>
-                                <div class="col-9">
+                                <div class="righty d-block d-sm-block d-md-block d-lg-none d-xl-none"><img src="img/arrRight.svg"></div>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9">
                                     <div class="tab-content tab-with-course" id="v-pills-translate-tabContent">
                                         <div class="tab-pane fade show active" id="v-pills-translate-english" role="tabpanel"
                                             aria-labelledby="v-pills-translate-english-tab">
@@ -1185,8 +1286,10 @@
                                                 <li><img src="img/user-graduate.svg"><a href="#">Международные
                                                         экзамены</a></li>
                                             </ul>
+                                            
                                             <input value="ПОДОБРАТЬ КУРС" class="btn orange-button btn-primary five-minute-course__button"
                                                 type="button">
+                                            
                                         </div>
                                         <div class="tab-pane fade" id="v-pills-translate-spanish" role="tabpanel"
                                             aria-labelledby="v-pills-translate-spanish-tab">
@@ -1208,8 +1311,10 @@
                                                 <li><img src="img/user-graduate.svg"><a href="#">Международные
                                                         экзамены</a></li>
                                             </ul>
+                                            
                                             <input value="ПОДОБРАТЬ КУРС" class="btn orange-button btn-primary five-minute-course__button"
                                                 type="button">
+                                            
                                         </div>
                                         <div class="tab-pane fade" id="v-pills-translate-italian" role="tabpanel"
                                             aria-labelledby="v-pills-translate-italian-tab">
@@ -1231,8 +1336,10 @@
                                                 <li><img src="img/user-graduate.svg"><a href="#">Международные
                                                         экзамены</a></li>
                                             </ul>
+                                            
                                             <input value="ПОДОБРАТЬ КУРС" class="btn orange-button btn-primary five-minute-course__button"
                                                 type="button">
+                                            
                                         </div>
                                         <div class="tab-pane fade" id="v-pills-translate-chinese" role="tabpanel"
                                             aria-labelledby="v-pills-translate-chinese-tab">
@@ -1254,8 +1361,10 @@
                                                 <li><img src="img/user-graduate.svg"><a href="#">Международные
                                                         экзамены</a></li>
                                             </ul>
+                                            
                                             <input value="ПОДОБРАТЬ КУРС" class="btn orange-button btn-primary five-minute-course__button"
                                                 type="button">
+                                            
                                         </div>
                                         <div class="tab-pane fade" id="v-pills-translate-french" role="tabpanel"
                                             aria-labelledby="v-pills-translate-french-tab">
@@ -1277,8 +1386,10 @@
                                                 <li><img src="img/user-graduate.svg"><a href="#">Международные
                                                         экзамены</a></li>
                                             </ul>
+                                            
                                             <input value="ПОДОБРАТЬ КУРС" class="btn orange-button btn-primary five-minute-course__button"
                                                 type="button">
+                                            
                                         </div>
                                         <div class="tab-pane fade" id="v-pills-translate-russian" role="tabpanel"
                                             aria-labelledby="v-pills-translate-russian-tab">
@@ -1300,8 +1411,10 @@
                                                 <li><img src="img/user-graduate.svg"><a href="#">Международные
                                                         экзамены</a></li>
                                             </ul>
+                                            
                                             <input value="ПОДОБРАТЬ КУРС" class="btn orange-button btn-primary five-minute-course__button"
                                                 type="button">
+                                            
                                         </div>
                                         <div class="tab-pane fade" id="v-pills-translate-deutch" role="tabpanel"
                                             aria-labelledby="v-pills-translate-deutch-tab">
@@ -1323,8 +1436,10 @@
                                                 <li><img src="img/user-graduate.svg"><a href="#">Международные
                                                         экзамены</a></li>
                                             </ul>
+                                            
                                             <input value="ПОДОБРАТЬ КУРС" class="btn orange-button btn-primary five-minute-course__button"
                                                 type="button">
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -1337,9 +1452,8 @@
     </main>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>

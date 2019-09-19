@@ -464,6 +464,7 @@ input.send_order__input {
     text-decoration: none;
     font-weight: bold;
     padding: 13px 0px;
+        max-width: 330px;
 }
 .nav-v-pills-courses > a.active {
     color: #FF7B15!important;
@@ -491,7 +492,9 @@ display: flex;
     align-items: center;
     justify-content: space-between;
     padding-right: 28px;
-
+}
+.nav-v-pills-courses {
+    flex-direction: column;
 }
 @media (min-width: 768px) and (max-width: 1439px) {
 
@@ -539,5 +542,190 @@ display: flex;
 }
 .courses {
     background-size: 37%;
+}
+}
+@media (min-width: 320px) and (max-width: 767px) {
+#pills-tab {
+    position: initial;
+    z-index: 10;
+    justify-content: center;
+        margin-bottom: 20px!important;
+
+}
+.tab-with-course > div {
+    padding-top: 50px;
+    padding-left: initial;
+}
+.nav-v-pills-courses {
+    flex-direction: initial;
+}
+.tab-with-course > div > p {
+    width: initial;
+}
+.navbar-toggler-icon {
+    background-image: url(../img/menu-alt-512.png);
+}
+.orange-button {
+    background-color: #FF7B15;
+    border: none;
+    text-decoration: none;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    font-size: 18px;
+    float: right;
+    margin: 20px 50px 0px 0px;
+}
+body {
+    padding-top: 9rem;
+}
+#navbarCollapse {
+    background-color: #fff;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 736px;
+}
+#navbarCollapse ul {
+padding: 90px 0px 0px 50px;
+}
+#navbarCollapse ul li a {
+    color: #000;
+    font-size: 18px;
+}
+.close-top-menu {
+        position: absolute;
+    right: 50px;
+    top: 10px;
+    text-decoration: none;
+    font-size: 36px;
+}
+.mobile-sub-menu {
+    border: none;
+    position: static!important;
+}
+.mobile-sub-menu a {
+    text-decoration: none;
+}
+.mobile-second-menu {
+    padding: 60px 0px 0px 50px!important;
+    flex-direction: column!important;
+}
+.mobile-second-menu li {
+padding: 10px 0px;
+}
+.mobile-second-menu li a {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+h1 {
+    font-size: 28px;
+    text-align: center;
+    line-height: 40px;
+}
+.our-achievments div {
+    margin-bottom: 40px;
+}
+.block-learning > div {
+    font-size: 18px;
+    padding: 0px 20px 20px 20px;
+}
+.block-learning > div img {
+    display: block;
+    padding-bottom: 20px;
+    float: left;
+    padding-right: 25px;
+}
+.five-minute-course > ul.nav.nav-tabs {
+    display: flex;
+    float: right;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-image: url(../img/LineHorizontal.svg);
+    background-repeat: no-repeat;
+    background-position: 59px 14px;
+    border-bottom: none;
+    top: -44px;
+    width: 100%;
+    padding: 0px 10px;
+    margin-bottom: 20px;
+    height: initial;
+}
+.five-minute-course h2 {
+    color: #ffffff;
+    margin-top: 50px;
+}
+.menu-nav {
+    height: 75px;
+}
+input[type=radio]+label {
+    width: 170px;
+}
+.five-minute-course {
+    padding-bottom: 30px;
+}
+.five-minute-course__button {
+    font-size: 20px;
+    padding: 10px 30px;
+    margin: 30px 0px 0px 0px!important;
+    float: none!important;
+}
+.nav-v-pills-courses {
+    flex-direction: initial;
+    overflow: auto;
+    white-space: nowrap;
+      width: 10000px!important;
+}
+.nav-v-pills-courses > a {
+    background: none!important;
+    color: #333;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 13px 0px;
+    display: inline-block;
+    min-width: 414px;
+    text-align: center!important;
+
+}
+.center-mobile-button {
+    text-align: center;
+}
+.tab-with-course > div > input {
+    margin-left: 20%!important;
+    margin-bottom: 50px!important;
+}
+.courses {
+    background-image: initial;
+}
+.nav-v-pills-courses-container {
+overflow: auto;
+    white-space: nowrap;
+
+}
+.lefty {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+}
+.righty {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+.carousel-item.main-slide img{
+    margin: 0 -100%;
+    width: 200%!important;
+}
+.main-slide>div>a.slider-link {
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    padding: 9px 20px 6px 20px;
+    color: #fff;
+    margin-top: 20px;
 }
 }
