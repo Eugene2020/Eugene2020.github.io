@@ -163,8 +163,8 @@ a:hover {
 }
 .contact-block {
 display: inline-block;
-    margin-left: 58px;
     vertical-align: middle;
+    text-align: right;
 }
 .contact-block .contact-block__phone {
     font-size: 20px;
@@ -486,11 +486,26 @@ input.send_order__input {
     background-position: 100% 100%;
     background-size: 27%;
 }
+.top-contacts-blocks {
+display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 28px;
+}
 
 @media (min-width: 768px) {
 
 .top-navigation {
     padding: 0;
+    font-size: 16px;
 }
+.navbar-brand {
+    font-size: 16px!important;
+}
+.search-form {
+    font-size: 16px;
+}
+.top-contacts-blocks {
 
+}
 }
