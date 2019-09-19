@@ -78,7 +78,7 @@ h1 {
 h2 {
     font-size: 30px;
     text-align: center;
-    padding: 20px 0px;
+    padding: 20px 0px 50px 0px;
     font-weight: bold;
 }
 .fixed-top {
@@ -491,9 +491,9 @@ display: flex;
     align-items: center;
     justify-content: space-between;
     padding-right: 28px;
-}
 
-@media (min-width: 768px) {
+}
+@media (min-width: 768px) and (max-width: 1439px) {
 
 .top-navigation {
     padding: 0;
@@ -505,7 +505,39 @@ display: flex;
 .search-form {
     font-size: 16px;
 }
-.top-contacts-blocks {
-
+.orange-top-link {
+    font-size: 16px;
+    margin-right: 22px;
+}
+.categories-menu > div.navbar > ul.navbar-nav > li.nav-item > a.nav-link {
+    font-size: 18px;
+}
+.orange-button {
+    background-color: #FF7B15;
+    border: none;
+    text-decoration: none;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 16px;
+    width: 155px;
+    line-height: 18px;
+}
+.row.block-learning > div {
+    padding: 0px 30px;
+    margin-bottom: 30px;
+}
+.five-minute-course__button {
+    width: initial;
+    padding: 11px;
+}
+#pills-tab {
+    top: 59px;
+    left: 251px;
+}
+.tab-with-course > div {
+    padding-left: 10px;
+}
+.courses {
+    background-size: 37%;
 }
 }
