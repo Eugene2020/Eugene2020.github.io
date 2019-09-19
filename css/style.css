@@ -72,12 +72,14 @@ body {
 h1 {
     font-size: 40px;
     text-align: center;
-    padding: 40px 0px;
+    padding: 70px 0px;
+    font-weight: bold;
 }
 h2 {
     font-size: 30px;
     text-align: center;
     padding: 20px 0px;
+    font-weight: bold;
 }
 .fixed-top {
     background-color: #ffffff;
@@ -106,6 +108,7 @@ h2 {
 }
 .top-navigation a.navbar-brand {
     color: #ffffff;
+    font-size: 18px;
 }
 .dropdown-item {
     height: 40px;
@@ -119,11 +122,12 @@ h2 {
     border: none;
     border-radius: 0;
     box-shadow: none;
-    color: rgba(255, 255, 255, 0.5);
     background-image: url(../img/Search.svg);
     background-repeat: no-repeat;
-    background-position: 5px 20px;
-    padding-left: 27px;
+    background-position: 17px 20px;
+    padding-left: 45px;
+    font-size: 18px;
+    padding-right: 0px;
 }
 .search-form:focus {
     background-color: #4F4F4F;
@@ -158,27 +162,27 @@ a:hover {
     font-weight: bold;
 }
 .contact-block {
-    float: right;
-    display: inline-block;
-    text-align: right;
-    margin-left: 30px;
+display: inline-block;
+    margin-left: 58px;
+    vertical-align: top;
 }
 .contact-block .contact-block__phone {
     font-size: 20px;
     color: #828282;
+    font-weight: bold;
 }
 .contact-block .contact-block__phone span {
     color: initial;
 }
 .top-contacts {
-    height: 70px;
+    height: 88px;
     padding-top: 10px;
 }
 .categories-menu {
     display: inline-block;
 }
 .categories-menu > div.navbar > ul.navbar-nav > li.nav-item > a.nav-link {
-    padding: 0px 13px 0px 0px;
+    padding: 0px 12px 0px 0px;
     font-size: 20px;
     color: #333333;
     text-decoration: none;
@@ -186,11 +190,16 @@ a:hover {
 .categories-menu > div.navbar > ul.navbar-nav > li.nav-item > a.nav-link:after {
     position: relative;
     top: 3px;
+    border-right: .25em solid transparent;
+    border-left: .25em solid transparent;
 }
 .orange-button {
     background-color: #FF7B15;
     border: none;
     text-decoration: none;
+        padding-top: 9px;
+    padding-bottom: 9px;
+    font-size: 18px;
 }
 .orange-button:hover {
     background-color: #EF6C00;
@@ -214,7 +223,7 @@ a:hover {
     position: absolute;
     bottom: 20px;
     left: 5%;
-    top: 15%;
+    top: 18%;
     z-index: 10;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -249,7 +258,7 @@ a:hover {
     display: inline-block;
     border: 3px solid #fff;
     border-radius: 10px;
-    padding: 10px;
+    padding: 9px 50px 6px 50px;
     color: #fff;
     margin-top: 20px;
 }
@@ -274,11 +283,12 @@ section.container-fluid.p-0.our-achievments-container::after {
     width: 100%;
 }
 .our-achievments-container {
-    margin-bottom: 130px;
+    margin-bottom: 150px;
 }
 .our-achievments > div {
     font-size: 20px;
     text-align: center;
+    font-weight: bold;
 }
 .our-achievments > div > span {
     display: block;
@@ -302,6 +312,7 @@ section.container-fluid.p-0.our-achievments-container::after {
 }
 .five-minute-course h2 {
     color: #ffffff;
+        margin-top: 50px;
 }
 .five-minute-course > .tab-content {
     display: inline-block;
@@ -316,6 +327,8 @@ section.container-fluid.p-0.our-achievments-container::after {
     background-repeat: no-repeat;
     background-position: 13px 44px;
     border-bottom: none;
+        position: relative;
+    top: -60px;
 }
 .five-minute-course > ul.nav.nav-tabs > li {
     width: 30px;
@@ -353,6 +366,8 @@ section.container-fluid.p-0.our-achievments-container::after {
 }
 .five-minute-course__button {
     font-size: 20px;
+padding: 10px 30px;
+    margin: 30px 0px 60px 0px;
 }
 
 input[type=radio] {
@@ -371,7 +386,7 @@ input[type=radio] {
     background-repeat: repeat-x;
     border: 1px solid #fff;
     border-radius: 7px;
-    margin: 7px 7px;
+    margin: 14px 7px;
 }
   input[type=radio]:checked+label {
     background-image: none;
@@ -398,4 +413,63 @@ input.send_order__input {
 }
 .courses h2 {
     text-align: center;
+        margin: 50px 0px 0px 0px;
+}
+.menu-nav {
+        height: 65px;
+}
+.five-minute-course__button {
+
+}
+.tab-with-course > div {
+    padding-top: 50px;
+        padding-left: 80px;
+}
+#pills-tab {
+        display: inline-flex;
+    position: relative;
+    z-index: 99999;
+    top: 57px;
+    left: 365px;
+}
+#pills-tab > li {
+
+}
+#pills-tab > li > a {
+    padding: 7px 15px;
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+}
+#pills-tab > li > a.active {
+    font-weight: bold;
+    background: none;
+    text-decoration: underline;
+    color: #FF7B15;
+}
+.nav-v-pills-courses {
+    text-align: right;
+}
+.nav-v-pills-courses > a {
+    background: none!important;
+    color: #333;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 13px 0px;
+}
+.nav-v-pills-courses > a.active {
+    color: #FF7B15!important;
+    text-decoration: underline;
+}
+.ul-for-course {
+    list-style: none;
+    padding: 0;
+}
+.ul-for-course li {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.ul-for-course li img {
+    margin-right: 25px;
 }
