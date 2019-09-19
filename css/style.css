@@ -396,3 +396,6 @@ input.send_order__input {
     border: none;
     padding-left: 30px;
 }
+.courses h2 {
+    text-align: center;
+}
