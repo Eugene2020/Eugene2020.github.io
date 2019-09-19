@@ -164,7 +164,7 @@ a:hover {
 .contact-block {
 display: inline-block;
     margin-left: 58px;
-    vertical-align: top;
+    vertical-align: middle;
 }
 .contact-block .contact-block__phone {
     font-size: 20px;
@@ -272,15 +272,16 @@ display: inline-block;
     background-color: #f4f4f4;
 }
 section.container-fluid.p-0.our-achievments-container::after {
-    position: absolute;
+position: absolute;
     content: "";
     border-top: 7em solid;
-    border-right: 45em solid transparent;
-    border-bottom: 0;
-    border-left: 45em solid transparent;
-    color: #f4f4f4;
+    color: rgba(255, 255, 255, 0);
     z-index: 0;
     width: 100%;
+    background-image: url(../img/Rectangle6.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
 }
 .our-achievments-container {
     margin-bottom: 150px;
@@ -421,6 +422,12 @@ input.send_order__input {
 .five-minute-course__button {
 
 }
+.tab-with-course {
+
+}
+.tab-with-course > div > p {
+    width: 500px;
+}
 .tab-with-course > div {
     padding-top: 50px;
         padding-left: 80px;
@@ -428,7 +435,7 @@ input.send_order__input {
 #pills-tab {
         display: inline-flex;
     position: relative;
-    z-index: 99999;
+    z-index: 10;
     top: 57px;
     left: 365px;
 }
@@ -472,4 +479,18 @@ input.send_order__input {
 }
 .ul-for-course li img {
     margin-right: 25px;
+}
+.courses {
+    background-image: url(../img/bg_copy.png);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: 27%;
+}
+
+@media (min-width: 768px) {
+
+.top-navigation {
+    padding: 0;
+}
+
 }
