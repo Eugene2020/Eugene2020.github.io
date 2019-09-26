@@ -1,0 +1,148 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  padding-top: 49px;
+}
+
+h3 {
+  font-size: 35px;
+}
+
+nav {
+  background-color: #333;
+}
+
+nav button {
+  margin: 5px 0px;
+}
+
+nav button:focus {
+  outline: none;
+}
+
+nav button span {
+  background-image: url("../img/menu-icon.svg");
+  background-repeat: no-repeat;
+  height: 14px;
+  width: 17px;
+  display: block;
+}
+
+#navbarToggleExternalContent {
+  background-color: #333;
+  position: fixed;
+  width: 100%;
+  top: 49px;
+  left: 0;
+}
+
+header {
+  background-image: url("../img/header-bg.png");
+  background-position: 30% 0;
+  background-size: cover;
+  background-color: #0000004a;
+  background-blend-mode: color;
+  text-align: center;
+  color: #ffffff;
+  padding: 35px 0px 65px 0px;
+}
+
+header p.subtext-logo {
+  padding: 10px 0px 20px 0px;
+  margin: 0;
+  font-size: 15px;
+}
+
+header h3 {
+  padding: 40px 0px 20px 0px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+header a.link-red-button {
+  background-color: #E53935;
+  padding: 10px 40px;
+  border-radius: 50px;
+  display: inline-block;
+}
+
+ul.tables-slider__menu {
+  padding: 0;
+  list-style: none;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+ul.tables-slider__menu li {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+div.advantages-container {
+  background-color: #E53935;
+}
+
+div.advantages-container div.row {
+  padding: 10px 0px;
+}
+
+div.advantages-container div.row div {
+  color: #fff;
+  padding: 15px 25px;
+}
+
+div.advantages-container div.row div img {
+  width: 50px;
+  margin-right: 20px;
+}
+
+.food-on-table_mark {
+  margin-top: -24px;
+}
+
+.food-on-table_mark div.row {
+  text-align: center;
+  background-color: #E53935;
+  color: #fff;
+  padding: 15px 0px;
+}
+
+.food-on-table_mark:before {
+  position: relative;
+  content: ' ';
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 10px solid #E53935;
+  z-index: 2;
+  top: -8px;
+}
+
+.slide-table img {
+  -webkit-filter: brightness(0.7);
+  filter: brightness(0.7);
+  position: absolute;
+  z-index: -1;
+}
+
+.slide-table h3 {
+  color: #fff;
+  font-size: 25px;
+  padding: 25px 0px 40px 0px;
+}
+
+.slide-table a {
+  color: #fff !important;
+  font-size: 18px;
+  padding-top: 0px;
+  display: block;
+  padding-bottom: 40px;
+}
+
+.peppermint-slides {
+  padding: 0;
+}
