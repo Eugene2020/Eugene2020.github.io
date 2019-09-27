@@ -1,10 +1,20 @@
-$('.peppermint').Peppermint({
-    dots: true,
-    slideshow: true,
-    speed: 500,
-    slideshowInterval: 5000,
-    stopSlideshowAfterInteraction: true,
-    onSetup: function (n) {
-        console.log('Peppermint setup done. Slides found: ' + n);
-    }
+$('.slider-mobile').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slider-for'
+});
+$('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    asNavFor: '.slider-mobile',
+    //centerMode: true,
+    focusOnSelect: true,
+    adaptiveHeight: true
+});
+$(function () {
+    $(".accordion").accordion({
+        collapsible: true,
+    });
 });
