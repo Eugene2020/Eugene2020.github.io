@@ -1,170 +1,369 @@
 <!doctype html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/peppermint.required.css">
+    <link rel="stylesheet" href="css/peppermint.suggested.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 
     <title>fabrika</title>
 </head>
 
 <body>
-<nav class="navbar fixed-top">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
-        aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span></span>
-    </button>
-    <a href="#"><img src="img/map-point.svg" />&nbsp;<span>Магазины рядом</span></a>
-    <div class="collapse" id="navbarToggleExternalContent">
-        <ul class="text-white">
-            <li>Новинки</li>
-            <li><img src="img/hot.svg" alt="Горячие хиты"> Горячие хиты</li>
-            <li>Рецепты и подача</li>
-            <li>Мифы</li>
-            <li>Где купить</li>
-        </ul>
-    </div>
-</nav>
-<header>
-    <img src="img/logo.svg" alt="Фабрика качества">
-    <p class="subtext-logo">Вкусно и быстро к столу по любому поводу</p>
-    <img src="img/horeca.png" alt="HORECA">
-    <h3>Сезонные новинки</h3>
-    <p class="subtext-header">Сочные закуски в поездки на природу, дачу или к любому празднику</p>
-    <a class="link-red-button" href="#">ВСЕ НОВИНКИ</a>
-</header>
-<main>
-    <div class="container advantages-container">
-        <div class="row">
-            <div class="col-12"><img src="img/meat.svg" alt="Натуральный состав"><span>Натуральный состав</span></div>
-            <div class="col-12"><img src="img/award.svg" alt="Строгое соблюдение качества"><span>Строгое соблюдение качества</span></div>
-            <div class="col-12"><img src="img/sausage.svg" alt="Быстро и просто приготовить"><span>Быстро и просто приготовить</span></div>
-            <div class="col-12"><img src="img/barbecue.svg" alt="Свежая, вкусная продукция"><span>Свежая, вкусная продукция</span></div>
+    <nav class="navbar fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+            aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span></span>
+        </button>
+        <a href="#"><img src="img/map-point.svg" />&nbsp;<span>Магазины рядом</span></a>
+        <div class="collapse" id="navbarToggleExternalContent">
+            <ul class="text-white">
+                <li>Новинки</li>
+                <li><img src="img/hot.svg" alt="Горячие хиты"> Горячие хиты</li>
+                <li>Рецепты и подача</li>
+                <li>Мифы</li>
+                <li>Где купить</li>
+            </ul>
         </div>
-    </div>
-
-    <div class="recipes">
-
-        <div class="slider-mobile">
-            <div class="slide-table p0">
-                <img class="d-block w-100" src="img/picnic.png" alt="1">
-                <h3>К столу,<br>по любопу поводу</h3>
-                <div class="container food-on-table_mark">
-                    <div class="row">
-                        <div class="col-12">Блюда на столе</div>
-                    </div>
+    </nav>
+    <header>
+        <img src="img/logo.svg" alt="Фабрика качества">
+        <p class="subtext-logo">Вкусно и быстро к столу по любому поводу</p>
+        <img src="img/horeca.png" alt="HORECA">
+        <h3>Сезонные новинки</h3>
+        <p class="subtext-header">Сочные закуски в поездки на природу, дачу или к любому празднику</p>
+        <a class="link-red-button" href="#">ВСЕ НОВИНКИ</a>
+    </header>
+    <main>
+        <div class="container advantages-container">
+            <div class="row">
+                <div class="col-12"><img src="img/meat.svg" alt="Натуральный состав"><span>Натуральный состав</span>
                 </div>
-            </div>
-            <div class="slide-table p0">
-                <img class="d-block w-100" src="img/birthday.png" alt="2">
-                <h3>К столу,<br>по любопу поводу</h3>
-                
-                <div class="container food-on-table_mark">
-                    <div class="row">
-                        <div class="col-12">Блюда на столе</div>
-                    </div>
-                </div>
-            </div>
-            <div class="slide-table p0">
-                <img class="d-block w-100" src="img/ethnic.png" alt="3">
-                <h3>К столу,<br>по любопу поводу</h3>
-                
-                <div class="container food-on-table_mark">
-                    <div class="row">
-                        <div class="col-12">Блюда на столе</div>
-                    </div>
-                </div>
-            </div>
-            <div class="slide-table p0">
-                <img class="d-block w-100" src="img/breakfast.png" alt="4">
-                <h3>К столу,<br>по любопу поводу</h3>
-                
-                <div class="container food-on-table_mark">
-                    <div class="row">
-                        <div class="col-12">Блюда на столе</div>
-                    </div>
-                </div>
+                <div class="col-12"><img src="img/award.svg" alt="Строгое соблюдение качества"><span>Строгое соблюдение
+                        качества</span></div>
+                <div class="col-12"><img src="img/sausage.svg" alt="Быстро и просто приготовить"><span>Быстро и просто
+                        приготовить</span></div>
+                <div class="col-12"><img src="img/barbecue.svg" alt="Свежая, вкусная продукция"><span>Свежая, вкусная
+                        продукция</span></div>
             </div>
         </div>
-        <div class="slider-for">
-            <div>#На природу
-                <div class="accordion">
-                    <div>
-        
+
+        <div class="recipes">
+
+            <div class="slider-mobile">
+                <div class="slide-table p0">
+                    <img class="d-block w-100" src="img/picnic.png" alt="1">
+                    <h3>К столу,<br>по любопу поводу</h3>
+                    <div class="container food-on-table_mark">
+                        <div class="row">
+                            <div class="col-12">Блюда на столе</div>
+                        </div>
                     </div>
-                    <div>
-                        <p>
-                            Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-                            ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-                            amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-                            odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-                        </p>
+                </div>
+                <div class="slide-table p0">
+                    <img class="d-block w-100" src="img/birthday.png" alt="2">
+                    <h3>К столу,<br>по любопу поводу</h3>
+
+                    <div class="container food-on-table_mark">
+                        <div class="row">
+                            <div class="col-12">Блюда на столе</div>
+                        </div>
                     </div>
-                    <h3>Section 2</h3>
-                    <div>
-                        <p>
-                            Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
-                            purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
-                            velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
-                            suscipit faucibus urna.
-                        </p>
+                </div>
+                <div class="slide-table p0">
+                    <img class="d-block w-100" src="img/ethnic.png" alt="3">
+                    <h3>К столу,<br>по любопу поводу</h3>
+
+                    <div class="container food-on-table_mark">
+                        <div class="row">
+                            <div class="col-12">Блюда на столе</div>
+                        </div>
                     </div>
-                    <h3>Section 3</h3>
-                    <div>
-                        <p>
-                            Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
-                            Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
-                            ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
-                            lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
-                        </p>
-                        <ul>
-                            <li>List item one</li>
-                            <li>List item two</li>
-                            <li>List item three</li>
-                        </ul>
-                    </div>
-                    <h3>Section 4</h3>
-                    <div>
-                        <p>
-                            Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-                            et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-                            faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-                            mauris vel est.
-                        </p>
-                        <p>
-                            Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
-                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                            inceptos himenaeos.
-                        </p>
+                </div>
+                <div class="slide-table p0">
+                    <img class="d-block w-100" src="img/breakfast.png" alt="4">
+                    <h3>К столу,<br>по любопу поводу</h3>
+
+                    <div class="container food-on-table_mark">
+                        <div class="row">
+                            <div class="col-12">Блюда на столе</div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div>#День_рождения</div>
-            <div>#Национальная кухня</div>
-            <div>#Завтрак</div>
+            <div class="slider-for">
+                <div><span class="slide-title">#На природу</span>
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="recipe-header card-header" id="headingOne" data-toggle="collapse"
+                                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <h4>Салат с ветчиной</h4>
+                                <div><span class="recipe-cooking-time">Не требует готовки</span></div>
+                            </div>
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                <div class="recipe-inner card-body">
+                                    <a href="#" class="recipe-link-more">Подробнее о товаре...</a>
+                                    <img src="img/rulka.png" />
+                                    <p class="recipe-kkal">На 100 г - 346,5 ккал</p>
+                                    <p class="recipe-section-title">Ингридиенты</p>
+                                    <ul>
+                                        <li>Рулька свиная премиум — 1 уп.</li>
+                                        <li>Картофель — 4 шт.</li>
+                                        <li>Перец — 2 шт.</li>
+                                        <li>Помидоры черри — 3-4 шт.</li>
+                                        <li>Растительное масло — 1 ч.л.</li>
+                                        <li>Чеснок, зеленый лук — по желанию для украшения блюда</li>
+                                        <li>Приправы для овощей — по желанию</li>
+                                    </ul>
+                                    <p class="recipe-section-title">Приготовление</p>
+                                    <ol>
+                                        <li>Разогреть духовку до 210°С.</li>
+                                        <li>Удалить этикетки с упаковки рульки.</li>
+                                        <li>Сделать 3-4 небольших надреза в верхней части упаковки, длина надреза 1-2
+                                            см.</li>
+                                        <li>Поместить рульку в духовку на противень и запекать при 210°С до образования
+                                            золотистой корочки на поверхности
+                                            (ориентировочно 40 минут).</li>
+                                        <li>Нарезать овощи крупными дольками.</li>
+                                        <li>Масло смешивать с солью, перцем, травами.</li>
+                                        <li>Выложить овощи на противень, полить маслом с приправами.</li>
+                                        <li>Запекать при 180 °С примерно 30 минут.</li>
+                                    </ol>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="recipe-header card-header" id="headingTwo" data-toggle="collapse"
+                                data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                <h4>Салат с ветчиной</h4>
+                                <span class="special-recipe-status">ПРЕМИУМ</span>
+                                <div><span class="recipe-cooking-time">10 минут</span></div>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                    richardson ad squid. 3 wolf
+                                    moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                                    laborum eiusmod.
+                                    Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee
+                                    nulla assumenda
+                                    shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                                    nesciunt sapiente ea
+                                    proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim
+                                    aesthetic synth nesciunt you probably haven't heard of them accusamus labore
+                                    sustainable VHS. Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                    accusamus terry richardson ad squid. 3 wolf
+                                    moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                                    laborum eiusmod.
+                                    Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee
+                                    nulla assumenda
+                                    shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                                    nesciunt sapiente ea
+                                    proident. Ad vegan excepteur butcher vice lomo.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="recipe-header card-header" id="headingThree" data-toggle="collapse"
+                                data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                <h4>Салат с ветчиной</h4>
+                                <span class="special-recipe-status">ОСОБАЯ</span>
+                                <div>
+                                    <span class="recipe-portions">2-3 порции</span><span class="recipe-cooking-time">1
+                                        час 10 минут</span>
+                                </div>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordionExample">
+                                <div class="recipe-inner card-body">
+                                    <a href="#" class="recipe-link-more">Подробнее о товаре...</a>
+                                    <img src="img/rulka.png" />
+                                    <p class="recipe-kkal">На 100 г - 346,5 ккал</p>
+                                    <p class="recipe-section-title">Ингридиенты</p>
+                                    <ul>
+                                        <li>Рулька свиная премиум — 1 уп.</li>
+                                        <li>Картофель — 4 шт.</li>
+                                        <li>Перец — 2 шт.</li>
+                                        <li>Помидоры черри — 3-4 шт.</li>
+                                        <li>Растительное масло — 1 ч.л.</li>
+                                        <li>Чеснок, зеленый лук — по желанию для украшения блюда</li>
+                                        <li>Приправы для овощей — по желанию</li>
+                                    </ul>
+                                    <p class="recipe-section-title">Приготовление</p>
+                                    <ol>
+                                        <li>Разогреть духовку до 210°С.</li>
+                                        <li>Удалить этикетки с упаковки рульки.</li>
+                                        <li>Сделать 3-4 небольших надреза в верхней части упаковки, длина надреза 1-2
+                                            см.</li>
+                                        <li>Поместить рульку в духовку на противень и запекать при 210°С до образования
+                                            золотистой корочки на поверхности
+                                            (ориентировочно 40 минут).</li>
+                                        <li>Нарезать овощи крупными дольками.</li>
+                                        <li>Масло смешивать с солью, перцем, травами.</li>
+                                        <li>Выложить овощи на противень, полить маслом с приправами.</li>
+                                        <li>Запекать при 180 °С примерно 30 минут.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="recipe-header card-header" id="headingFour" data-toggle="collapse"
+                                data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                <h4>Салат с ветчиной</h4>
+                                <div><span class="recipe-cooking-time">10 минут</span></div>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                    richardson ad squid. 3 wolf
+                                    moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                                    laborum eiusmod.
+                                    Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee
+                                    nulla assumenda
+                                    shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                                    nesciunt sapiente ea
+                                    proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim
+                                    aesthetic synth nesciunt you probably haven't heard of them accusamus labore
+                                    sustainable VHS. Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                    accusamus terry richardson ad squid. 3 wolf
+                                    moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                                    laborum eiusmod.
+                                    Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee
+                                    nulla assumenda
+                                    shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                                    nesciunt sapiente ea
+                                    proident. Ad vegan excepteur butcher vice lomo.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div><span class="slide-title">#День_рождения</span></div>
+                <div><span class="slide-title">#Национальная кухня</span></div>
+                <div><span class="slide-title">#Завтрак</span></div>
+            </div>
         </div>
-    </div>
 
-</main>
+        <div class="tables container-fluid">
+            <div class="row">
+            <div class="tables-table col-12" style="background-image: url(img/breakfast.png)">
+                
+                <h4>#Завтрак</h4>
+                <a href="#" class="transparent-button">СМОТРЕТЬ СТОЛ</a>
+            </div>
+            <div class="tables-table  col-12" style="background-image: url(img/dessert.png)">
+                
+                <h4>#На сладкое</h4>
+                <a href="#" class="transparent-button">СМОТРЕТЬ СТОЛ</a>
+            </div>
+            <div class="tables-table  col-12" style="background-image: url(img/breakfast.png)">
+                
+                <h4>#Завтрак</h4>
+                <a href="#" class="transparent-button">СМОТРЕТЬ СТОЛ</a>
+            </div>
+            <div class="tables-table  col-12" style="background-image: url(img/breakfast.png)">
+                
+                <h4>#Завтрак</h4>
+                <a href="#" class="transparent-button">СМОТРЕТЬ СТОЛ</a>
+            </div>
+            </div>
+        </div>
 
+        <div class="hot-news container">
+            <h2>Сочные новинки</h2>
+            <div class="row">
+            <div class="food-card col-12">
+                <img src="img/grudinka.png" alt="Грудинка свиная запеченая" class="food-card__image">
+                <p class="food-card_title">Грудинка свиная запеченая</p>
+                <p class="food-card_status">ПРЕМИУМ</p>
+                <img src="img/Line.svg" class="line-limiter">
+                <p class="food-card__info">Вес 0.300 кг<br>Не требует приготовления</p>
+            </div>
+            <div class="food-card col-12">
+                <img src="img/grudinka.png" alt="Грудинка свиная запеченая" class="food-card__image">
+                <p class="food-card_title">Грудинка свиная запеченая</p>
+                <p class="food-card_status">ПРЕМИУМ</p>
+                <img src="img/Line.svg" class="line-limiter">
+                <p class="food-card__info">Вес 0.300 кг<br>Не требует приготовления</p>
+            </div>
+            <a href="#" class="white-button-link">Показать ещё</a>
+            </div>
+        </div>
+
+        <div class="cooking-variants container">
+            <h2>Сервировка и приготовление</h2>
+            <div class="row">
+                <div class="cooking-variants-variant">
+                    <p class="cooking-variants_title">Тефтели мясные</p>
+                    <div class="cooking-variants__image-container">
+                        <a href="" class="cooking-variants__videorecipe">Видеорецепт</a>
+                        <img src="img/tefteli.png" alt="Тефтели мясные" class="cooking-variants__image">
+                    </div>
+                    <p class="cooking-variants-section-title">Ингридиенты</p>
+                    <ul>
+                        <li>Морковь 1 штука</li>
+                        <li>Морковь 1 штука</li>
+                        <li>Морковь 1 штука</li>
+                    </ul>
+                    <p class="cooking-variants-time">Готовится 45 минут</p>
+                    <div class="cooking-variants-recipe">
+                        <p><strong>Рецепт</strong></p>
+                        <ol>
+                            <li>Рис отварить, промыть в холодной воде.</li>
+                            <li>Морковь натереть на терке, лук нарезать кубиками.</li>
+                            <li>Фарш посолить, поперчить, добавить половину лука, тертую морковь, рис и замесить фарш.</li>
+                        </ol>
+                    </div>
+                </div>
+            <a href="#" class="white-button-link">Показать ещё</a>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <img src="img/logo.svg" alt="Фабрика качества">
+        <p class="footer-big-text">Полный ассортимент продукции смотрите на нашем сайте</p>
+        <a class="link-red-button" href="#">НА САЙТ</a>
+        <span class="contact-us-span">Связаться с нами</span>
+        <span class="contact-us-span-phone"><img src="img/phone.svg"> 8 800 100 31 30</span>
+        <span class="contact-us-span-mail"><img src="img/mail.svg"> info@fk100.ru</span>
+        <span class="contact-us-span">Мы в соцсетях</span>
+        <div class="social-icons">
+            <a href="#"><img src="img/Facebook.svg" alt=""></a>
+            <a href="#"><img src="img/Instagram.svg" alt=""></a>
+            <a href="#"><img src="img/VK.svg" alt=""></a>
+            <a href="#"><img src="img/OK.svg" alt=""></a>
+            <a href="#"><img src="img/Youtube.svg" alt=""></a>
+        </div>
+        <span class="footer-text">Copyright © 2019 Фабрика качества - производство колбас, деликатесов, полуфабрикатов, выпечки</span>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
-        crossorigin="anonymous"></script>
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="js/peppermint.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="js/script.js"></script>

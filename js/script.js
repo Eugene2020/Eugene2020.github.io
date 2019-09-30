@@ -13,8 +13,9 @@ $('.slider-for').slick({
     focusOnSelect: true,
     adaptiveHeight: true
 });
-$(function () {
-    $(".accordion").accordion({
-        collapsible: true,
-    });
+$('#accordionExample').on('hidden.bs.collapse', function () {
+    $('.slider-for')[0].slick.animateHeight();
 });
+$('#accordionExample').on('shown.bs.collapse', function () {
+    $('.slider-for')[0].slick.animateHeight();
+})
