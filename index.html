@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/peppermint.required.css">
+    <link rel="stylesheet" href="css/peppermint.suggested.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
@@ -16,7 +18,7 @@
 </head>
 
 <body>
-    <nav class="navbar fixed-top">
+    <nav class="navbar fixed-top d-flex d-md-none">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
             aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
             <span></span>
@@ -33,23 +35,44 @@
         </div>
     </nav>
     <header>
-        <img src="img/logo.svg" alt="Фабрика качества">
-        <p class="subtext-logo">Вкусно и быстро к столу по любому поводу</p>
-        <img src="img/horeca.png" alt="HORECA">
+        <div class="container-logo">
+            <img src="img/logo.svg" alt="Фабрика качества">
+            <img src="img/horeca.png" alt="HORECA" class="horeca-logo-lg d-none d-md-none d-lg-inline">
+            <a href="#" class="d-none d-md-inline"><img src="img/map-point.svg" /><span>Магазины рядом</span></a>
+            <span class="d-none d-md-inline">Добавляйтесь и участвуйте в розыгрышах:</span>
+            <div class="social-icons d-none d-md-block">
+                <a href="#"><img src="img/Facebook.svg" alt=""></a>
+                <a href="#"><img src="img/Instagram.svg" alt=""></a>
+                <a href="#"><img src="img/VK.svg" alt=""></a>
+                <a href="#"><img src="img/OK.svg" alt=""></a>
+                <a href="#"><img src="img/Youtube.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="container-menu">
+            <p class="subtext-logo">Вкусно и быстро к столу по любому поводу</p>
+            <ul class="text-white d-none d-md-block">
+                <li>Новинки</li>
+                <li><img src="img/hot.svg" alt="Горячие хиты"> Горячие хиты</li>
+                <li>Рецепты и подача</li>
+                <li>Мифы</li>
+                <li>Где купить</li>
+            </ul>
+        </div>
+        <img src="img/horeca.png" alt="HORECA" class="d-inline d-md-inline d-lg-none">
         <h3>Сезонные новинки</h3>
-        <p class="subtext-header">Сочные закуски в поездки на природу, дачу или к любому празднику</p>
+        <p class="subtext-header">Сочные закуски в поездки на природу, дачу или к<br>любому празднику</p>
         <a class="link-red-button" href="#">ВСЕ НОВИНКИ</a>
     </header>
     <main>
-        <div class="container advantages-container">
+        <div class="container-fluid advantages-container">
             <div class="row">
-                <div class="col-12"><img src="img/meat.svg" alt="Натуральный состав"><span>Натуральный состав</span>
+                <div class="col-12 col-md-3"><img src="img/meat.svg" alt="Натуральный состав"><span>Натуральный состав</span>
                 </div>
-                <div class="col-12"><img src="img/award.svg" alt="Строгое соблюдение качества"><span>Строгое соблюдение
+                <div class="col-12 col-md-3"><img src="img/award.svg" alt="Строгое соблюдение качества"><span>Строгое соблюдение
                         качества</span></div>
-                <div class="col-12"><img src="img/sausage.svg" alt="Быстро и просто приготовить"><span>Быстро и просто
+                <div class="col-12 col-md-3"><img src="img/sausage.svg" alt="Быстро и просто приготовить"><span>Быстро и просто
                         приготовить</span></div>
-                <div class="col-12"><img src="img/barbecue.svg" alt="Свежая, вкусная продукция"><span>Свежая, вкусная
+                <div class="col-12 col-md-3"><img src="img/barbecue.svg" alt="Свежая, вкусная продукция"><span>Свежая, вкусная
                         продукция</span></div>
             </div>
         </div>
@@ -59,8 +82,8 @@
             <div class="slider-mobile">
                 <div class="slide-table p0">
                     <img class="d-block w-100" src="img/picnic.png" alt="1">
-                    <h3>К столу,<br>по любопу поводу</h3>
-                    <div class="container food-on-table_mark">
+                    <h3>К столу, по любопу поводу</h3>
+                    <div class="container food-on-table_mark d-block d-md-none">
                         <div class="row">
                             <div class="col-12">Блюда на столе</div>
                         </div>
@@ -70,7 +93,7 @@
                     <img class="d-block w-100" src="img/birthday.png" alt="2">
                     <h3>К столу,<br>по любопу поводу</h3>
 
-                    <div class="container food-on-table_mark">
+                    <div class="container food-on-table_mark d-block d-md-none">
                         <div class="row">
                             <div class="col-12">Блюда на столе</div>
                         </div>
@@ -80,7 +103,7 @@
                     <img class="d-block w-100" src="img/ethnic.png" alt="3">
                     <h3>К столу,<br>по любопу поводу</h3>
 
-                    <div class="container food-on-table_mark">
+                    <div class="container food-on-table_mark d-block d-md-none">
                         <div class="row">
                             <div class="col-12">Блюда на столе</div>
                         </div>
@@ -90,7 +113,7 @@
                     <img class="d-block w-100" src="img/breakfast.png" alt="4">
                     <h3>К столу,<br>по любопу поводу</h3>
 
-                    <div class="container food-on-table_mark">
+                    <div class="container food-on-table_mark d-block d-md-none">
                         <div class="row">
                             <div class="col-12">Блюда на столе</div>
                         </div>
@@ -99,7 +122,7 @@
             </div>
             <div class="slider-for">
                 <div><span class="slide-title">#На природу</span>
-                    <div class="accordion" id="accordionExample">
+                    <div class="accordion d-block d-md-none" id="accordionExample">
                         <div class="card">
                             <div class="recipe-header card-header" id="headingOne" data-toggle="collapse"
                                 data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -109,35 +132,26 @@
                             <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
                                 data-parent="#accordionExample">
                                 <div class="card-body">
-                                <div class="recipe-inner card-body">
-                                    <a href="#" class="recipe-link-more">Подробнее о товаре...</a>
-                                    <img src="img/rulka.png" />
-                                    <p class="recipe-kkal">На 100 г - 346,5 ккал</p>
-                                    <p class="recipe-section-title">Ингридиенты</p>
-                                    <ul>
-                                        <li>Рулька свиная премиум — 1 уп.</li>
-                                        <li>Картофель — 4 шт.</li>
-                                        <li>Перец — 2 шт.</li>
-                                        <li>Помидоры черри — 3-4 шт.</li>
-                                        <li>Растительное масло — 1 ч.л.</li>
-                                        <li>Чеснок, зеленый лук — по желанию для украшения блюда</li>
-                                        <li>Приправы для овощей — по желанию</li>
-                                    </ul>
-                                    <p class="recipe-section-title">Приготовление</p>
-                                    <ol>
-                                        <li>Разогреть духовку до 210°С.</li>
-                                        <li>Удалить этикетки с упаковки рульки.</li>
-                                        <li>Сделать 3-4 небольших надреза в верхней части упаковки, длина надреза 1-2
-                                            см.</li>
-                                        <li>Поместить рульку в духовку на противень и запекать при 210°С до образования
-                                            золотистой корочки на поверхности
-                                            (ориентировочно 40 минут).</li>
-                                        <li>Нарезать овощи крупными дольками.</li>
-                                        <li>Масло смешивать с солью, перцем, травами.</li>
-                                        <li>Выложить овощи на противень, полить маслом с приправами.</li>
-                                        <li>Запекать при 180 °С примерно 30 минут.</li>
-                                    </ol>
-                                </div>
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                    richardson ad squid. 3 wolf
+                                    moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                                    laborum eiusmod.
+                                    Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee
+                                    nulla assumenda
+                                    shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                                    nesciunt sapiente ea
+                                    proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim
+                                    aesthetic synth nesciunt you probably haven't heard of them accusamus labore
+                                    sustainable VHS. Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                    accusamus terry richardson ad squid. 3 wolf
+                                    moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                                    laborum eiusmod.
+                                    Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee
+                                    nulla assumenda
+                                    shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
+                                    nesciunt sapiente ea
+                                    proident. Ad vegan excepteur butcher vice lomo.
                                 </div>
                             </div>
                         </div>
@@ -259,22 +273,22 @@
 
         <div class="tables container-fluid">
             <div class="row">
-            <div class="tables-table col-12" style="background-image: url(img/breakfast.png)">
+            <div class="tables-table col-12 col-md-3" style="background-image: url(img/breakfast.png)">
                 
                 <h4>#Завтрак</h4>
                 <a href="#" class="transparent-button">СМОТРЕТЬ СТОЛ</a>
             </div>
-            <div class="tables-table  col-12" style="background-image: url(img/dessert.png)">
+            <div class="tables-table  col-12 col-md-3" style="background-image: url(img/dessert.png)">
                 
                 <h4>#На сладкое</h4>
                 <a href="#" class="transparent-button">СМОТРЕТЬ СТОЛ</a>
             </div>
-            <div class="tables-table  col-12" style="background-image: url(img/breakfast.png)">
+            <div class="tables-table  col-12 col-md-3" style="background-image: url(img/breakfast.png)">
                 
                 <h4>#Завтрак</h4>
                 <a href="#" class="transparent-button">СМОТРЕТЬ СТОЛ</a>
             </div>
-            <div class="tables-table  col-12" style="background-image: url(img/breakfast.png)">
+            <div class="tables-table  col-12 col-md-3" style="background-image: url(img/breakfast.png)">
                 
                 <h4>#Завтрак</h4>
                 <a href="#" class="transparent-button">СМОТРЕТЬ СТОЛ</a>
@@ -285,29 +299,45 @@
         <div class="hot-news container">
             <h2>Сочные новинки</h2>
             <div class="row">
-            <div class="food-card col-12">
+            <div class="food-card col-12 col-md-4 col-lg-3">
                 <img src="img/grudinka.png" alt="Грудинка свиная запеченая" class="food-card__image">
                 <p class="food-card_title">Грудинка свиная запеченая</p>
                 <p class="food-card_status">ПРЕМИУМ</p>
                 <img src="img/Line.svg" class="line-limiter">
                 <p class="food-card__info">Вес 0.300 кг<br>Не требует приготовления</p>
             </div>
-            <div class="food-card col-12">
+            <div class="food-card col-12 col-md-4 col-lg-3">
                 <img src="img/grudinka.png" alt="Грудинка свиная запеченая" class="food-card__image">
                 <p class="food-card_title">Грудинка свиная запеченая</p>
                 <p class="food-card_status">ПРЕМИУМ</p>
                 <img src="img/Line.svg" class="line-limiter">
                 <p class="food-card__info">Вес 0.300 кг<br>Не требует приготовления</p>
             </div>
-            <a href="#" class="white-button-link">Показать ещё</a>
+            <div class="food-card col-12 col-md-4 col-lg-3">
+                <img src="img/grudinka.png" alt="Грудинка свиная запеченая" class="food-card__image">
+                <p class="food-card_title">Грудинка свиная запеченая</p>
+                <p class="food-card_status">ПРЕМИУМ</p>
+                <img src="img/Line.svg" class="line-limiter">
+                <p class="food-card__info">Вес 0.300 кг<br>Не требует приготовления</p>
+            </div>
+            <div class="food-card col-12 col-md-4 col-lg-3">
+                <img src="img/grudinka.png" alt="Грудинка свиная запеченая" class="food-card__image">
+                <p class="food-card_title">Грудинка свиная запеченая</p>
+                <p class="food-card_status">ПРЕМИУМ</p>
+                <img src="img/Line.svg" class="line-limiter">
+                <p class="food-card__info">Вес 0.300 кг<br>Не требует приготовления</p>
+            </div>
+            </div>
+            <div class="row center">
+                <a href="#" class="white-button-link">Показать ещё</a>
             </div>
         </div>
 
         <div class="cooking-variants container">
             <h2>Сервировка и приготовление</h2>
             <div class="row">
-                <div class="cooking-variants-variant">
-                    <p class="cooking-variants_title">Тефтели мясные</p>
+                <div class="cooking-variants-variant col-12 col-md-6">
+                    <p class="cooking-variants_title"><a href="#">Тефтели мясные</a></p>
                     <div class="cooking-variants__image-container">
                         <a href="" class="cooking-variants__videorecipe">Видеорецепт</a>
                         <img src="img/tefteli.png" alt="Тефтели мясные" class="cooking-variants__image">
@@ -328,27 +358,76 @@
                         </ol>
                     </div>
                 </div>
-            <a href="#" class="white-button-link">Показать ещё</a>
+                <div class="cooking-variants-variant col-12 col-md-6">
+                    <p class="cooking-variants_title"><a href="#">Тефтели мясные</a></p>
+                    <div class="cooking-variants__image-container">
+                        <a href="" class="cooking-variants__videorecipe">Видеорецепт</a>
+                        <img src="img/tefteli.png" alt="Тефтели мясные" class="cooking-variants__image">
+                    </div>
+                    <p class="cooking-variants-section-title">Ингридиенты</p>
+                    <ul>
+                        <li>Морковь 1 штука</li>
+                        <li>Морковь 1 штука</li>
+                        <li>Морковь 1 штука</li>
+                    </ul>
+                    <p class="cooking-variants-time">Готовится 45 минут</p>
+                    <div class="cooking-variants-recipe">
+                        <p><strong>Рецепт</strong></p>
+                        <ol>
+                            <li>Рис отварить, промыть в холодной воде.</li>
+                            <li>Морковь натереть на терке, лук нарезать кубиками.</li>
+                            <li>Фарш посолить, поперчить, добавить половину лука, тертую морковь, рис и замесить фарш.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="row center">
+                <a href="#" class="white-button-link">Показать ещё</a>
             </div>
         </div>
 
     </main>
     <footer>
-        <img src="img/logo.svg" alt="Фабрика качества">
+        <img class="d-inline d-md-none" src="img/logo.svg" alt="Фабрика качества">
         <p class="footer-big-text">Полный ассортимент продукции смотрите на нашем сайте</p>
         <a class="link-red-button" href="#">НА САЙТ</a>
-        <span class="contact-us-span">Связаться с нами</span>
-        <span class="contact-us-span-phone"><img src="img/phone.svg"> 8 800 100 31 30</span>
-        <span class="contact-us-span-mail"><img src="img/mail.svg"> info@fk100.ru</span>
-        <span class="contact-us-span">Мы в соцсетях</span>
-        <div class="social-icons">
+        <span class="contact-us-span d-block d-md-none">Связаться с нами</span>
+        <span class="contact-us-span-phone d-block d-md-none"><img src="img/phone.svg"> 8 800 100 31 30</span>
+        <span class="contact-us-span-mail d-block d-md-none"><img src="img/mail.svg"> info@fk100.ru</span>
+        <span class="contact-us-span d-block d-md-none">Мы в соцсетях</span>
+        <div class="social-icons d-block d-md-none">
             <a href="#"><img src="img/Facebook.svg" alt=""></a>
             <a href="#"><img src="img/Instagram.svg" alt=""></a>
             <a href="#"><img src="img/VK.svg" alt=""></a>
             <a href="#"><img src="img/OK.svg" alt=""></a>
             <a href="#"><img src="img/Youtube.svg" alt=""></a>
         </div>
-        <span class="footer-text">Copyright © 2019 Фабрика качества - производство колбас, деликатесов, полуфабрикатов, выпечки</span>
+        <span class="footer-text d-block d-md-none">Copyright © 2019 Фабрика качества - производство колбас, деликатесов, полуфабрикатов, выпечки</span>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="d-none d-md-block col-md-4">
+                    <img src="img/logo.svg" alt="Фабрика качества">
+                    <span class="footer-text">Copyright © 2019 Фабрика качества - производство колбас, деликатесов,
+                        полуфабрикатов, выпечки</span>
+                </div>
+                <div class="d-none d-md-none"></div>
+                <div class="d-none d-md-block col-md-5">
+                    <span>Связаться с нами:</span>
+                    <span class="contact-us-span-phone"><img src="img/phone.svg"> 8 800 100 31 30</span>
+                    <span class="contact-us-span-mail"><img src="img/mail.svg"> info@fk100.ru</span>
+                </div>
+                <div class="d-none d-md-block col-md-3">
+                    <span class="contact-us-span">Мы в соцсетях</span>
+                    <div class="social-icons">
+                        <a href="#"><img src="img/Facebook.svg" alt=""></a>
+                        <a href="#"><img src="img/Instagram.svg" alt=""></a>
+                        <a href="#"><img src="img/VK.svg" alt=""></a>
+                        <a href="#"><img src="img/OK.svg" alt=""></a>
+                        <a href="#"><img src="img/Youtube.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <!-- Optional JavaScript -->
@@ -361,9 +440,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="js/peppermint.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
 
 </body>
 
